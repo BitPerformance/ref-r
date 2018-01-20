@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.3.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.5.2'
 # Use PostgreSQL as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -48,6 +48,11 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
 
 group :development, :test do
+gem 'pry'
+gem 'rspec-rails', '3.4.2'
+gem 'rspec-mocks', '3.4.1'
+gem 'test-unit', '~> 3.0'
+gem "dotenv-rails"
 
 end
 
