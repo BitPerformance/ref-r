@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 	before_action :retrive_referrer, only: :new
 	before_action :check_session, only: :new
 	before_action :check_email_address, only: :create
-	before_action :fetch_user, only: [:show, :destroy]
+	before_action :fetch_users, only: [:show, :destroy]
 	before_action :authenticate_admin, only: [:index, :destroy]
 
 
