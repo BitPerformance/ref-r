@@ -48,11 +48,6 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
 
 group :development, :test do
-gem 'pry'
-gem 'rspec-rails', '3.4.2'
-gem 'rspec-mocks', '3.4.1'
-gem 'test-unit', '~> 3.0'
-gem "dotenv-rails"
-
+  
 end
 
