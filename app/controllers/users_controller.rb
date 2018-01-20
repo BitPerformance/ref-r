@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
 
 	def index
-		@users = User.all.order("created_at desc").paginate(:page => params[:page], :per_page => 100)
+		@user = Users.all.order("created_at desc").paginate(:page => params[:page], :per_page => 100)
 
 		respond_to do |format|
 	    	format.html {render layout: "dashboard"}
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
 
 	def new
-		@user = User.new()
+		@user = User.new
 		respond_to do |format|
             format.html
         end
