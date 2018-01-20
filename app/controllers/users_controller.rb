@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
 
 	def new
-		@user = User.new(user_params)
+		@user = User.new()
 		respond_to do |format|
             format.html
         end
